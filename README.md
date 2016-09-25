@@ -1,7 +1,8 @@
 # WDMX-WS2811
 This is the project home for the WDMX WS2811 controller. It's primarily designed for use as a wearable controller.
 It Make's use of lib_dmx and FastLED. It could in theroy be used to support non standard DMX protocals such as DMX1000K and other non-standard, high channel count protocals. 
-Hardware Specs:
+	
+	Hardware Specs:
 	•	Industry Standard wireless solution’s W-DMX header (compatible with internal or external antenna Nano boards & 2.4 or 5.8ghz)
 	•	Standard WS2811 digital LEDs (and software upgradable to almost any NRZ [non-return-to-zero] digital LED protocol)
 	•	5v or 7-24v DC input
