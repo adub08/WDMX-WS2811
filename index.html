@@ -20,7 +20,7 @@
 
     <section class="main-content">
       <p>This is the project home for the WDMX WS2811 controller. 
-It's primarily designed for use as a wearable controller. My current software for it is ardunio IDE based, and makes use of the lib_dmx and FastLED libraries . It could in theory be used to support non standard DMX protocols such as DMX1000K and other non-standard, high channel count protocols. 
+It's primarily designed for use as a wearable ws2812 controller. My current software for it is ardunio IDE based, and makes use of the lib_dmx and FastLED libraries.  It could in theory be used to support non standard DMX protocols such as DMX1000K and other non-standard, high channel count protocols (although this is completely untested). 
 Photos of use: <a href="http://alex.woodnet.net.au/set-electrics-2/">Here</a></p>
 
 <p><img src="http://alex.woodnet.net.au/wp-content/gallery/stage_electrics/pinout.png" alt="Hardware Pinout">
@@ -29,7 +29,7 @@ Hardware Specs: </p>
 
 <ul>
 <li> Industry Standard wireless solution’s W-DMX header (compatible with internal or external antenna Nano boards &amp; 2.4 or 5.8ghz) </li>
-<li> Standard WS2811 digital LEDs (and software upgradable to almost any NRZ [non-return-to-zero] digital LED protocol) • 5v or 7-24v DC input </li>
+<li> Standard WS2811 digital LEDs (and software modifiable to any NRZ [non-return-to-zero] digital LED protocol) • 5v or 7-24v DC input </li>
 <li> Battery voltage check mode </li>
 <li> Wired DMX input option </li>
 <li> Internal Temperature sensor </li>
@@ -37,6 +37,15 @@ Hardware Specs: </p>
 <li> Full SPI integration with the WDMX module (Not implemented in software) </li>
 <li> 3 General Purpose digital I/O pins (2 interrupt compatible) with integrated hardware pull-ups &amp; 1 ADC input pin. </li>
 <li> 2 LED headers (1 of which connects directly to the WDMX module)</li>
+</ul>
+
+<p>Software To-do List:</p>
+
+<ul>
+<li>Move away from the Ardunio IDE &amp; bootloader in order to optimise power usage and startup time</li>
+<li>Implement SPI control of the WDMX module</li>
+<li>Implement RDM (battery voltage, ATMEGA temp sensor, DMX addressing,  Pixel type, Colour order, Pixel count, WDMX unlink, WDMX signal strength, Channel selection override)</li>
+<li>Test DMX1000k over DMX &amp; WDMX.</li>
 </ul>
 
       <footer class="site-footer">
