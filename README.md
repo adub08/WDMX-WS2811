@@ -15,4 +15,4 @@ It Make's use of lib_dmx and FastLED ardunio libaries . It could in theroy be us
 	•	2 LED headers (1 of which connects directly to the WDMX module)
 	• 	Simple ardunio-compadible ISP programming  
 
-	For More documentation please refer to 
+	For More documentation please refer to Project Wiki
