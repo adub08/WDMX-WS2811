@@ -1,3 +1,7 @@
+This branch adds 2x SOT223-4 mosfets, but changes the 2.54mm ISP header to be a Tag-connect TC2030-NL. Using the Tag-connect TC2030-NL saves a lot of board space, with the downside of this is requireing the specialised Tag-connect TC2030-NL cable for flashing, but gives you 2 ELV dimmer channels. 
+
+**This was never tested, the ardunio code not updated to add dmx control of the mosfets. I decided after all these year i probably won't come back to this, so yuse at your own risk**
+
 # WDMX-WS2811
 This is the project home for the WDMX WS2811 controller. It's primarily designed for use as a wearable controller.
 It Make's use of lib_dmx and FastLED ardunio libaries . It could in theroy be used to support non standard DMX protocals such as DMX1000K and other non-standard, high channel count DMX protocals (refer to the lib_dmx libary)
